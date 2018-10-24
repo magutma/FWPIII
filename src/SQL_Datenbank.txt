@@ -1,0 +1,16 @@
+#DROP TABLE TA_Bewertungen;
+#DROP TABLE TA_Hotel;
+
+CREATE TABLE TA_Hotel
+(HotelID INT AUTO_INCREMENT PRIMARY KEY,
+title varchar (255),
+href varchar (255),
+single_item_data numeric);
+
+CREATE TABLE TA_Bewertungen
+(BewertungenID INT AUTO_INCREMENT,
+bewertungen varchar(500),
+sterne numeric,
+HotelID int,
+PRIMARY KEY (BewertungenID),
+FOREIGN KEY (HotelID) REFERENCES TA_Hotel(HotelID));
