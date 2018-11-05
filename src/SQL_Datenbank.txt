@@ -9,7 +9,7 @@ single_item_data numeric);
 
 CREATE TABLE TA_Bewertungen
 (BewertungenID INT AUTO_INCREMENT,
-bewertungen varchar(500),
+bewertungen text,
 sterne numeric,
 HotelID int,
 PRIMARY KEY (BewertungenID),
