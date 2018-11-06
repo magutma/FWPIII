@@ -99,8 +99,8 @@ def get_single_textrating(max_pagesII, href, HotelID):
             for item_name in soupI.findAll('span', {'class': 'fullText'}):
                 bewertungen = (item_name.text)
                 #print(item_name.text)
-                #TODO printausgabe fuer emoiji
-                print ("hier waere ein print")
+                #TODO: printausgabe fuer emoiji
+                print ("hier waere ein print ")
                 #MySQL Anbindung
                 #store_bewertungs_data(bewertungen,HotelID)
                 containers = soup.findAll("div",{"class":"ui_column is-9"})
